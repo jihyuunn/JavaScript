@@ -1,5 +1,5 @@
 # 1 Promises
-============
+
 프로미스는 자바스크립트 비동기 처리에 사용되는 객체  
 ( 비동기 처리 : 특정 코드의 처리가 완료될 때까지 기다리지않고 다음 코드를 실행하는 것 )  
 #### 프로미스가 왜 필요한지?
@@ -30,7 +30,7 @@ new Promise(function(resolve, reject) {
 실패시에는 실패한 이유를 catch()로 받을 수 있다   
 
 # 2 Const vs Let
-================
+
 ES6 이전에는 var이 사용 되었는데 var이라는 것은 function 바깥에서 선언이 되면 globally scoped되고, function안에서
 선언이 되면 locally scoped되는 것임   
 그래서 나타나는 문제점은 function바깥에서 선언한 var를 function안에서 다른 값으로 선언하면 바깥에서도 바뀌게 된다  
@@ -81,7 +81,7 @@ favorite.third = 'coke' //가능
 결과적으로 const & let 은 blocked scoped이다
 
 # 3 Arrow Functions
-===================
+
 Arrow Function은 일반 함수보다 더 간결하게 표현이 가능하다  
 기존의 함수에서 function(x) 이라고 써야했던 것을 (x) => 라고 줄일 수 있다  
 파라미터가 한개라면 괄호까지 생략이 가능하다 x => 라고 하면 그냥 파라미터가 x한개인 것  
@@ -93,7 +93,7 @@ const function = (x, y) => {}; //parameter 2개
 ```
 
 # 4 Array Methods (map, reduce, filter, slice, splice)
-======================================================
+
 * map  
 원래 있던 array의 모든 요소들에 함수를 적용하여 새로운 array를 만드는 것  
 ```javascript
@@ -123,7 +123,7 @@ array.splice(시작index, 배열에서 제거할 요소의 수, 추가하는 ite
 삭제만 하게 된다  
 
 # 5 Spread Operator (Array/Object Spread)
-=======================================
+
 스프레드 연산자는 iterable object = 열거 가능한 것들을 하나씩 전개한다  
 변수 앞에 '...'를 찍어서 나타내면 된다  
 string spread는 한글자 한글자씩 요소가 되는 array로 만들 수 있다  
@@ -145,7 +145,7 @@ console.log(b) // [{c : 3}, {a : 1}, {b : 2}]
 ```
 
 # 6 Export / import
-===================
+
 * Export
 파일안의 함수나 객체를 Export하는 것  
 named exports와 default exports가 있다  
